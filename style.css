@@ -1,0 +1,19 @@
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 50%;
+    width: 50%;
+    padding: 15px;
+    size: auto;
+}
+
+#footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+    background: grey;
+}
