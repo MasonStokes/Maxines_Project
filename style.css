@@ -73,8 +73,6 @@
 }
 
 #history-text {
-    color: white;
-    background-color: black;
     /* border: solid 2px;
     border-color: aquamarine; */
     margin-left: 5%;
@@ -89,7 +87,11 @@
 }
 
 h1 {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
     text-align: center;
+    border-bottom: solid 1px black;
 }
 
 #rental-info {
