@@ -1,3 +1,4 @@
+/* Header page */
 .navbar-brand {
     align-content: center;
     margin-left: 5%;
@@ -19,10 +20,13 @@
     color:            #F8F8F8;
 }
 
+
+
+/* Home page */
 .carousel {
     /* background-color: rgb(169, 169, 169, .3); */
-    max-width: 80%;
-    height: 500px;
+    max-width: 90%;
+    height: 400px;
     margin-top: 3%;
     margin-bottom: 3%;
     margin-left: auto;
@@ -30,14 +34,13 @@
 }
 
 .carousel-inner > .carousel-item > img{
+    max-height: 100%;
+    height: 400px;
     max-width: 100%;
-    max-height: 500px;
     margin: auto;
-    height: auto;
-    width: auto;
+    object-fit: contain;
 }
 
-/* Make the previous and next carousel icons black */
 .carousel-control-prev-icon, .carousel-control-next-icon {
     filter: invert(1);
 }
@@ -48,8 +51,6 @@
 }
 
 #description {
-    /* border: solid 2px;
-    border-color: aquamarine; */
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 3%;
@@ -66,12 +67,18 @@
     background-color: rgb(69, 69, 69);
 }
 
-/* Create two equal columns that sits next to each other */
 #column {
     
     color: white;
 }
 
+#contact {
+    border-top: solid 1px white;
+}
+
+
+
+/* History page */
 #history-text {
     /* border: solid 2px;
     border-color: aquamarine; */
@@ -82,10 +89,9 @@
     width: 90%;
 }
 
-#contact {
-    border-top: solid 1px white;
-}
 
+
+/* History and rental pages */
 h1 {
     margin-left: 5%;
     margin-right: 5%;
@@ -94,6 +100,9 @@ h1 {
     border-bottom: solid 1px black;
 }
 
+
+
+/* Rental page */
 #rental-info {
     width: 90%;
     margin-top: 3%;
@@ -104,6 +113,9 @@ h1 {
     padding-right: 3%;
 }
 
+
+
+/* Footer page */
 #footer {
     border-top: solid 2px black;
     margin-top: 5%;
