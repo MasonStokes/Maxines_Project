@@ -10,18 +10,6 @@
         <script id="googleData" src="https://script.google.com/macros/s/AKfycbw-SFEulqLEl5yegkJ_SuHh3MY0C-OQr5GgMyOHWGF9mc06xK7-fKmCRdwSgg45HZaJ/exec" type="text/json"></script>
 
         <script type="text/javascript">
-            var x = JSON.parse(document.getElementById('googleData').textContent);
-            document.write(x);
-
-            // var data = getData();
-            // document.write(data);
-            // var tag = document.createElement("p");
-            // tag.appendChild(data);
-            // var element = document.getElementById("weekday-rate");
-            // element.appendChild(tag);
-        </script>
-
-        <script type="text/javascript">
             $(document).ready(function(){
                 $("#includeHeader").load( "Header.html" );
             });
@@ -59,6 +47,10 @@
 
                 <h3>Download rental contract here: <a href="/contracts/maxines-rental-contract.pdf" download="maxines-rental-contract">maxines-rental-contract.pdf</a></h3>
             </div>
+        </div>
+
+        <div>
+            <embed id="rental-contract" src="https://drive.google.com/file/d/1d2T0vVQm8899MlrJuDcuhWyFnl9sZP6L/preview" type="application/pdf">
         </div>
         
 
