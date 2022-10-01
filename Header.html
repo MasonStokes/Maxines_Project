@@ -1,4 +1,10 @@
 <header id="header">
+    <script>
+        $(".nav .nav-link").on("click", function(){
+            $(".nav").find(".active").removeClass("active");
+            $(this).addClass("active");
+        });
+    </script>
     <div class="m-4">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">

@@ -39,14 +39,27 @@
             });
         </script>
 
+        <script>
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbwQJGUkLk1IemVabkV7zj_j4737HjW4lq4i157INInQU1fSJtm-JG94TL1vhugaWPsY/exec",
+                type: 'GET',
+                dataType: 'json',
+                success: function(res) {
+                    var link = document.getElementById("download-file");
+                    console.log(res[1]);
+                    link.setAttribute("href", res[1]);
+                }
+            });
+        </script>
+
     </head>
     <body>
         <div id="includeHeader"></div>
 
-        <div>
-            <h1>Maxine's Ballroom Rental Rates</h1>
+        <h1 id="title">Maxine's Ballroom Rental Rates</h1><br>
+        <div id="description">
 
-            <div id="rental-info">
+            <div>
                 <h3>Rental Charges:</h3>
                 <p>$<span id="weekday-rate"></span> per hour to a maximum of $<span id="weekday-max"></span> for the day for weekday rentals (<span id="weekdays"></span>).</p>
                 <p>$<span id="weekend-rate"></span> per hour to a maximum of $<span id="weekend-max"></span> for the day for weekend rentals (<span id="weekend-days"></span>). <br> (Regularly recurring events on weekdays--such as exercise classes--may be eligible for a discounted hourly price).</p>
@@ -62,7 +75,7 @@
                 <h3>No Alcohol Policy:</h3>
                 <p>Exceptions may rarely be granted, but must be discussed with the manager well ahead of the event, and any agreed-upon exceptions must be written into the rental contract. Exceptions will likely require a larger damage deposit and potentially other additional charges, and the renter will be required to have a bartender with a license and sufficient insurance serving all alcohol. A copy of the license must be presented along with rental documents. <b>No exceptions to the policy will be granted at the last minute.</b></p>
 
-                <h3>Download rental contract here: <a href="/contracts/maxines-rental-contract.pdf" download="maxines-rental-contract">maxines-rental-contract.pdf</a></h3>
+                <h3>Download rental contract here: <a id="download-file" target="_blank">maxines-rental-contract.pdf</a></h3>
             </div>
         </div>
 
